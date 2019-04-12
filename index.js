@@ -32,9 +32,9 @@ class Route{
   
   blocksTravelled(){
     //calculate street distance - vertical
-  let street = parseInt(this.beginningLocation.vertical) - parseInt(this.beginningLocation.vertical)
+  let street = parseInt(this.beginningLocation.vertical) - parseInt(this.endingLocation.vertical)
     //calculate avenue distance - horizontal
-    let avenue = this.avenueToIndex(this.beginningLocation.horizontal) -  this.avenueToIndex(this.beginningLocation.horizontal)
+    let avenue = this.avenueToIndex(this.beginningLocation.horizontal) -  this.avenueToIndex(this.endingLocationLocation.horizontal)
     if (street < 0){ street = 0 - street}
     if (avenue < 0){ avenue = 0 - avenue}
     
