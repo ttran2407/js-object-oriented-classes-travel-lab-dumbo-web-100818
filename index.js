@@ -35,6 +35,10 @@ class Route{
   let street = parseInt(this.beginningLocation.vertical) - parseInt(this.beginningLocation.vertical)
     //calculate avenue distance - horizontal
     let avenue = this.avenueToIndex(this.beginningLocation.horizontal) -  this.avenueToIndex(this.beginningLocation.horizontal)
+    if (street < 0){ street = 0 - street}
+    if (avenue < 0){ avenue = 0 - avenue}
+    
+    return street + avenue
   }
     
   }
